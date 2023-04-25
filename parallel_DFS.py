@@ -30,6 +30,7 @@ def divide_list(adj_list, num_parts):
         end = start + quotient + (i < remainder)
         sublists.append(my_tree[start:end])
         start = end
+    #sublists = [my_tree[i::num_parts] for i in range(num_parts)]
     return sublists
 
 
